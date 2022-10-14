@@ -129,7 +129,7 @@ def test_add_new_pet_with_special_symbols_name(name = '$i$yn', animal_type = 'Gu
     _, auth_key = PetFriends().get_api_key(valid_email, valid_password)
     status, result = PetFriends().add_new_pet(auth_key, name, animal_type, age, pet_photo)
     assert status != 200
-    assert result['name'] != '$i$yn' # Ожидаем, что питомец не будет добавлен на сайт со спецсимволами в поле name.
+    assert result['name'] != '$i$yn' 
 
 
 def test_add_new_pet_with_empty_animal_type(name = 'Boba', animal_type = '', age = '15', pet_photo = 'image/photo1.jpg'):
