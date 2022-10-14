@@ -10,3 +10,6 @@ class Calculator:
 
    def adding(self, x, y):
        return x + y
+
+   def pow(self, x, y):
+       return x ** y

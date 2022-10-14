@@ -17,3 +17,6 @@ class TestCalc:
 
     def test_adding_calculate_correctly(self):
         assert self.calc.adding(self, 5, 2) == 7
+
+    def test_pow_calculate_correctly(self):
+        assert self.calc.pow(self, 7, 2) == 49
